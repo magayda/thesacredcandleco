@@ -19,34 +19,67 @@ html {
   width: 100%;
   height: 100%;
   background: #243f3e;
+  justify-content: center;
+  align-content: center;
+  display: flex;
+  margin-bottom: 50px;
 }
 .tsc-wrap {
-  position: absolute;
+  /* display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  justify-content: center;
+  align-items: center; */
   height: 100%;
-  width: 100%;
+  margin-bottom: 50px;
   display: flex;
+  align-self: center;
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
   color: #fff;
-  font-family: 'Domaine Display';
-  /* color: #e8c0b6; */
+  font-family: 'Domaine Display' !important;
 }
 h2, h3 {
-  width: 500px;
   color: #e8c0b6;
-  /* color: #fff; */
+  word-wrap: break-word;
 }
 .tsc-logo, .landing-message {
-  /* display: flex; */
+
+}
+.hashtags {
+  color: #e8c0b6;
+  font-size: 1.3em;
+  margin-top: 10px;
 }
 .landing-message {
-  width: 500px;
+  max-width: 500px;
+  width: 70%;
   align-self: center;
 }
 .tsc-logo {
-  width: 500px;
+  max-width: 500px;
+  width: 80%;
+  min-width: 250px;
 }
 .social-logo {
   width: 40px;
+  padding-right: 20px;
+}
+
+@media (min-width: 0px) and (max-width: 999px) {
+  .landing-message {
+    align-items: center;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 499px) {
+  h1, h2, h3 {
+    font-size: 1.2em;
+  }
+}
+
+@media (min-width: 999px) {
+  .tsc-wrap {
+    margin-top: 100px;
+  }
 }
